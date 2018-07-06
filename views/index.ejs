@@ -20,9 +20,9 @@
     </script>
 
 </head>
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 <a href="/arb">Arbitrage!</a> <a href="/">Homepage!</a>
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
 <!-- Resources -->
 <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
@@ -221,7 +221,7 @@ x
 		var quoinexBids = []
         setInterval(function() {
             //chart = Highcharts.stockChart('container', options);
-            $.getJSON('http://localhost:8080/update?name=<%- name %>', function(jsondata) {
+            $.getJSON('https://tradeviewer.herokuapp.com/update?name=<%- name %>', function(jsondata) {
                 console.log(jsondata);
 				console.log(new Date().getTime());
 				var d = new Date().getTime();
