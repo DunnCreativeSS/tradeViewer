@@ -132,7 +132,9 @@ doOthers({symbol:'BTC/USD'});
  await sleep (quoinex.rateLimit) // milliseconds
 
 		   doQ(markets[v]);
+		   if (markets[v].symbol != "BTC/USD"){
 doOthers(markets[v]);
+		   }
 	}
 
     while(true){
