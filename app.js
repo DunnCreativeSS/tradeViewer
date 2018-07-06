@@ -487,7 +487,7 @@ var msg = '<head><meta http-equiv="refresh" content="5"><script src="https://aja
 					console.log(diffB)
 					console.log((diffA + diffB ) /2)
 					if ((diffA + diffB ) /2 > 0.05 || (diffA + diffB ) /2 < -0.05){
-						if (((diffA + diffB ) /2 <= 10 && (diffA + diffB ) /2 >= 0)|| ((diffA + diffB ) /2 >= -10 && (diffA + diffB ) /2 <= 0){
+						if (((diffA + diffB ) /2 <= 10 && (diffA + diffB ) /2 >= 0)|| ((diffA + diffB ) /2 >= -10 && (diffA + diffB ) /2 <= 0)){
 						if ((diffA + diffB ) /2 > 0){
 						msg+="<tr style = 'color:red;'>"
 						msg+="<td><form id='" + p + "'style='display:none;' action='/' method='post'><input type='hidden' name='Input' value='" + p + "'></input></form><a href='#' onclick='$(\"#" + p + "\").submit()'>" + p + "</a></td>"
