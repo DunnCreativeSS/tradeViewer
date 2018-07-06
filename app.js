@@ -4,12 +4,11 @@ var request = require("request")
 var bodyParser = require('body-parser')
 app.use('/media', express.static(__dirname + '/media'));
 app.use(express.static(__dirname + '/public'));
-var ccxt = require("./ccxt/ccxt.js")
+var ccxt = require("ccxt")
                                 var _ = require("underscore")
 const Binance = require('binance-api-node').default
 
 var moment = require("moment");
-var ccxt = require("./ccxt/ccxt.js")
 
 const client = Binance()
 
