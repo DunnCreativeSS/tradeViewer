@@ -21,6 +21,7 @@
     "request": "^2.87.0",
     "serve-favicon": "*",
     "dotenv": "*",
+    "bit_mex_api": "*",
     "trendyways": "^0.4.2"
   },
   "scripts": {
