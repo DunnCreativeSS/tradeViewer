@@ -441,64 +441,7 @@ if (asks[pair] !=undefined ){
             	}
 				var avgAsk= []
 				var avgBid = []
-		async function oulala(req, res, pair){
-			pair = pair.split('/')[0] + pair.split('/')[1]
-			var go = true;
-			for (var g in gogo){
-				if (gogo[g] == false){
-					go = false;
-				}
-			}
-			if ( true){
-					
-				for (var p in asks){
-					var totAsk = 0;
-					var totBid = 0;
-					for (var ex in asks[p]){
-					if (ex != 'quoinex'){
-						if (p == pair){
-							totAsk += parseFloat(asks[p][ex])
-							totBid += parseFloat(bids[p][ex])
-						}
-					}
-					else {
-						var qa = asks[p][ex]
-						var qb = bids[p][ex]
-					}
-					console.log('totAsk' + totAsk);
-					console.log('totBid' + totBid);
-					console.log((Object.keys(asks[p]).length - 1));
-					avgAsk[p] = totAsk / (Object.keys(asks[p]).length  - 1);
-					avgBid[p] = totBid / (Object.keys(bids[p]).length - 1);
-					console.log('avga: ' + avgAsk[p]);
-					console.log('avgb: ' + avgBid[p]);
-				}
-				}
-			  var result2 = (_.sortBy(result2, 'timestamp'));
-			   result15 = (_.sortBy(result15, 'timestamp'));
-			   result16 = (_.sortBy(result16, 'timestamp'));
-					//console.log(result2);
-					////console.log(binanceOB);
-			if (req.query.name){
-				console.log(asks);
-			res.json({avgAsk: avgAsk, avgBid: avgBid, quoinexAsk: asks['quoinex'][pair], quoinexBid: bids['quoinex'][pair]});
-				
-			}else {
-				var json = [{asks: asks, bids:bids}]
-				res.render('index.ejs', {
-					name: req.body.Input,
-					json: json,
-					trades: [],
-					msg: msg
-				})
-			}					
-			}
-			else {
-				setTimeout(function(){
-					oulala(req, res, pair);
-				}, 1000);
-			}
-		}
+		
 		
 app.get('/update', (req, res) => {
 
