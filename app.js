@@ -57,9 +57,8 @@ app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
 app.set('view engine', 'ejs');
 var MongoClient = require('mongodb').MongoClient;
 
-app.listen(8080, function() {
-    //console.log('listening on 80')
-})
+            app.listen(process.env.PORT || 8080, function() {});
+
 var sortBy = (function() {
     var toString = Object.prototype.toString,
         // default parser function
