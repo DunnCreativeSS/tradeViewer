@@ -1,0 +1,31 @@
+<a href="/arb">Arbitrage!</a> <a href="/">Homepage!</a>
+
+<%- msg %>
+
+
+<br>
+<table>
+<tr>
+     <td>time</td>
+     <td>ticker</td>
+     <td>bid</td>
+     <td>ask</td>
+     <td>arb %</td>
+     <td>bid exchange</td>
+     <td>ask exchange</td>
+     <td>threshold (base currency)</td>
+   </tr>
+<% var data = (arbs) %>
+<% for(var i=0; i < data.length; i++) { %>
+   <tr>
+     <td><%= data[i].toString().split(',')[0] %></td>
+     <td><%= data[i].toString().split(',')[1] %></td>
+     <td><%= data[i].toString().split(',')[2] %></td>
+     <td><%= data[i].toString().split(',')[3] %></td>
+     <td><%= data[i].toString().split(',')[4] %></td>
+     <td><%= data[i].toString().split(',')[5] %></td>
+     <td><%= data[i].toString().split(',')[6] %></td>
+     <td><%= data[i].toString().split(',')[7] %></td>
+   </tr>
+<% } %>
+</table>
