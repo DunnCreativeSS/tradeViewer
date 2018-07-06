@@ -10,20 +10,26 @@
     "co": "4.6.0",
     "express": "^4.16.3",
     "mongodb": "*",
+    "underscore": "*",
+	"socks-proxy-agent": "*",
+    "ccxt": "*",
+    "binance-api-node": "*",
     "path": "*",
+    "ejs": "*",
+    "moment": "*",
     "poloniex-api-node": "^1.9.0",
     "request": "^2.87.0",
     "serve-favicon": "*",
     "trendyways": "^0.4.2"
   },
   "scripts": {
-    "start": "node polofibbmonster.js"
+    "start": "node app.js"
   },
   "deprecated": false,
-  "description": "Engine for Polo automation",
+  "description": "Engine for Quoinex noticing skillz",
   "engines": {
     "node": ">=0.6"
   },
-  "name": "polofibbmonster",
+  "name": "qouinexnoticer",
   "version": "1.0.4"
 }
